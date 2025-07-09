@@ -34,5 +34,5 @@ jobs:
         run: gcloud info
 
       - name: Build and push Docker image
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/booming-monitor-465413-u6/notely-ar-repo .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/booming-monitor-465413-u6/notely-ar-repo/notely .
         
