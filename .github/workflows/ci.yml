@@ -37,3 +37,12 @@ jobs:
        - name: format Check
          run: test -z $(go fmt ./...)
 
+       - name: Install statichceck
+         run: go install honnef.co/go/tools/cmd/staticcheck@latest
+
+       - name: Run staticcheck
+         run: staticcheck ./...
+         
+
+
+
